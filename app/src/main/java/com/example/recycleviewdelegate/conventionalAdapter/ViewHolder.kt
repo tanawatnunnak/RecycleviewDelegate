@@ -14,6 +14,7 @@ class TitleViewHolder(private val binding: ItemTitleBinding) : RecyclerView.View
 class DetailViewHolder(private val binding: ItemDetailBinding) : RecyclerView.ViewHolder(binding.root) {
     fun bind(data: BaseItem.DetailItem) {
         binding.detailTv.text = data.detail
+        binding.itemTv.text = data.item.toString()
     }
 }
 
